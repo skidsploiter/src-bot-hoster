@@ -46,6 +46,7 @@ if __name__ == '__main__':
     db.create_all()
 
     # Use fixed Ngrok domain
+    os.system("ngrok http --url=driven-boxer-partly.ngrok-free.app 5000")
     print("Server running at: https://driven-boxer-partly.ngrok-free.app")
     
     app.run(host="0.0.0.0", port=5000, debug=True)
