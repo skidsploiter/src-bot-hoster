@@ -45,7 +45,7 @@ def stop_bot(bot_id):
 if __name__ == '__main__':
     db.create_all()
 
-    # Bind Flask to the Ngrok domain manually
+    # Use fixed Ngrok domain
     print("Server running at: https://driven-boxer-partly.ngrok-free.app")
     
     app.run(host="0.0.0.0", port=5000, debug=True)
